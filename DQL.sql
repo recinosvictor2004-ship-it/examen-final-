@@ -16,3 +16,10 @@ GROUP BY co.id_combo;
 SELECT tipo_pedido, COUNT(*) AS total_pedidos
 FROM Pedido
 GROUP BY tipo_pedido;
+
+
+SELECT a.nombre, SUM(pa.cantidad) AS total_usos
+FROM PedidoDetalleAdicion pa
+JOIN Adicion a ON pa.id_adicion = a.id_adicion
+GROUP BY a.id_adicion, a.nombre
+ORDER BY total_usos DESC;
