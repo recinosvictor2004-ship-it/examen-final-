@@ -13,13 +13,15 @@ INSERT INTO Adicion (nombre, precio) VALUES
 ('Salsa BBQ', 5.00);
 
 INSERT INTO Combo (nombre, precio_combo) VALUES
+
 ('Combo Pizza + Bebida', 75.00);
 
 INSERT INTO ComboProducto (id_combo, id_producto, cantidad) VALUES
 (1, 1, 1),  
 
 INSERT INTO Cliente (nombre, telefono, email) VALUES
-('Juan Pérez', '555-1111', 'juan@example.com'),
+('Juan Pérez', '555-1111', 'victor@example.com'),
+('Ana Gómez', '555-3333', 'ana@example.com'),
 ('María López', '555-2222', 'maria@example.com');
 
 INSERT INTO Pedido (id_cliente, fecha_hora, tipo_pedido) VALUES
