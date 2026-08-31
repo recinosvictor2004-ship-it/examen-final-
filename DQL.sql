@@ -11,3 +11,8 @@ FROM PedidoDetalle d
 JOIN Combo co ON d.id_combo = co.id_combo
 WHERE d.id_combo IS NOT NULL
 GROUP BY co.id_combo;
+
+
+SELECT tipo_pedido, COUNT(*) AS total_pedidos
+FROM Pedido
+GROUP BY tipo_pedido;
